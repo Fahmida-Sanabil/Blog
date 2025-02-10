@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Trash2, Eye } from 'lucide-react';
+import NavBar from './NavBar';
 
 
 const Blogs = () => {
@@ -34,6 +35,9 @@ const Blogs = () => {
 
 
   return (
+    <div>
+      <NavBar/>
+   
     <div className="bg-blue-50 h-screen">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-6 text-center text-blue-700">Blog Posts</h1>
@@ -70,6 +74,7 @@ const Blogs = () => {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 };
